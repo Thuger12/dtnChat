@@ -1,0 +1,153 @@
+Metadata-Version: 2.1
+Name: aiomisc
+Version: 11.1.11
+Summary: aiomisc - miscellaneous utils for asyncio
+Home-page: https://github.com/mosquito/aiomisc
+Author: Dmitry Orlov
+Author-email: me@mosquito.su
+License: MIT
+Platform: all
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: Russian
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: colorlog
+Requires-Dist: async-generator ; python_version < "3.7"
+Provides-Extra: aiohttp
+Requires-Dist: aiohttp ; extra == 'aiohttp'
+Provides-Extra: asgi
+Requires-Dist: aiohttp-asgi ; extra == 'asgi'
+Provides-Extra: carbon
+Requires-Dist: aiocarbon (~=0.15) ; extra == 'carbon'
+Provides-Extra: contextvars
+Requires-Dist: contextvars (~=2.4) ; extra == 'contextvars'
+Provides-Extra: cron
+Requires-Dist: croniter (~=0.3.34) ; extra == 'cron'
+Provides-Extra: develop
+Requires-Dist: aiohttp (<4) ; extra == 'develop'
+Requires-Dist: aiohttp-asgi ; extra == 'develop'
+Requires-Dist: async-generator ; extra == 'develop'
+Requires-Dist: async-timeout ; extra == 'develop'
+Requires-Dist: coverage (==4.5.1) ; extra == 'develop'
+Requires-Dist: coveralls ; extra == 'develop'
+Requires-Dist: croniter (~=0.3.34) ; extra == 'develop'
+Requires-Dist: fastapi ; extra == 'develop'
+Requires-Dist: mypy (~=0.782) ; extra == 'develop'
+Requires-Dist: pylava ; extra == 'develop'
+Requires-Dist: pytest ; extra == 'develop'
+Requires-Dist: pytest-cov (~=2.5.1) ; extra == 'develop'
+Requires-Dist: sphinx ; extra == 'develop'
+Requires-Dist: sphinx-autobuild ; extra == 'develop'
+Requires-Dist: sphinx-intl ; extra == 'develop'
+Requires-Dist: timeout-decorator ; extra == 'develop'
+Requires-Dist: tox (>=2.4) ; extra == 'develop'
+Provides-Extra: raven
+Requires-Dist: raven-aiohttp ; extra == 'raven'
+Provides-Extra: uvloop
+Requires-Dist: uvloop (<1,>=0.14) ; extra == 'uvloop'
+
+aiomisc - miscellaneous utils for asyncio
+=========================================
+
+.. image:: https://coveralls.io/repos/github/mosquito/aiomisc/badge.svg?branch=master
+   :target: https://coveralls.io/github/mosquito/aiomisc
+   :alt: Coveralls
+
+.. image:: https://github.com/aiokitchen/aiomisc/workflows/tox/badge.svg
+   :target: https://github.com/aiokitchen/aiomisc/actions?query=workflow%3Atox
+   :alt: Actions
+
+.. image:: https://img.shields.io/pypi/v/aiomisc.svg
+   :target: https://pypi.python.org/pypi/aiomisc/
+   :alt: Latest Version
+
+.. image:: https://img.shields.io/pypi/wheel/aiomisc.svg
+   :target: https://pypi.python.org/pypi/aiomisc/
+
+.. image:: https://img.shields.io/pypi/pyversions/aiomisc.svg
+   :target: https://pypi.python.org/pypi/aiomisc/
+
+.. image:: https://img.shields.io/pypi/l/aiomisc.svg
+   :target: https://pypi.python.org/pypi/aiomisc/
+
+
+Miscellaneous utils for asyncio.
+
+The complete documentation is available in the following languages:
+
+* `English documentation`_
+* `Russian documentation`_
+
+.. _English documentation: https://aiomisc.readthedocs.io/en/latest/
+.. _Russian documentation: https://aiomisc.readthedocs.io/ru/latest/
+
+.. contents:: Table of contents
+
+Installation
+------------
+
+Installing from pypi:
+
+.. code-block:: bash
+
+    pip3 install aiomisc
+
+With uvloop_:
+
+.. code-block:: bash
+
+    pip3 install "aiomisc[uvloop]"
+
+
+With aiohttp_:
+
+.. code-block:: bash
+
+    pip3 install "aiomisc[aiohttp]"
+
+
+Installing from github.com:
+
+.. code-block:: bash
+
+    pip3 install git+https://github.com/mosquito/aiomisc.git
+
+
+.. _uvloop: https://pypi.org/project/uvloop
+.. _aiohttp: https://pypi.org/project/aiohttp
+
+Versioning
+----------
+
+This software follows `Semantic Versioning`_
+
+
+How to develop?
+---------------
+
+Should be installed:
+
+* `virtualenv`
+* GNU Make as `make`
+* Python 3.5+ as `python3`
+
+
+For setting up developer environment just type
+
+    .. code-block::
+
+        make develop
+
+
+.. _Semantic Versioning: http://semver.org/
+
+
