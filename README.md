@@ -8,8 +8,7 @@
   
 ##### Pure asyncio socket implementation for registration and login(session key)
 
-  >We implement pure socket to make it easy to work exactly with bytes. 
+  * We implement pure socket to make it easy to work exactly with bytes. 
 In the future it will be easy to deal with some security
-  >Main server for logic implementation(aiohttp)
-  >To work with API and websocket(for real time connection)
-  >Make client part interactive and real time. Got some THREADING to hide blocking socket problem
+  * Main server for logic implementation(aiohttp) to work with API and websocket(for real time connection)
+  * Make client part interactive and real time. Got some THREADING to hide blocking socket problem
